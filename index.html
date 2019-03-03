@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Monticello</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+		<script src="main.js" type="application/javascript"></script>
+		<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+		<script src="js/main.js" type="application/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+
+		<header>
+			<div class="wrapper">
+				<nav>
+				<img src="img/logo.png" alt="logo">
+					<ul type="circle">
+						<li> <a href="#">gallery</a></li>
+						<li><a href="#">news</a></li>
+						<li><a href="#">contact</a></li>
+					</ul>
+					<div class="social">
+						<div class="social-el">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</div>
+						<div class="social-el">
+							<i class="fa fa-twitter"></i>
+						</div>
+						<div class="social-el">
+							<i class="fa fa-instagram"></i>
+						</div>
+					</div>
+				</nav>
+				<h1>
+						Simple & mordern
+				</h1>
+				<h2>
+					We make the world's beautiful every day
+				</h2><br>
+				<a href="#" class="go" alt="nav"><img src="img/go.png"></a>
+
+			</div>
+		</header>
+		<section class="first">
+			<div class="wrapper">
+				<img src="img/line1.png" alt="line" class="line">
+				<h3>gallery</h3>
+				<div class="box">
+					<img src="img/box1.jpg" alt="image">
+					<div class="boxIn">
+						<div class="boxIn1">
+							<img src="img/box2.jpg" alt="image">
+							<img src="img/box3.jpg" alt="image">
+						</div>
+						<div class="boxIn2">
+							<img src="img/box4.jpg" alt="image">
+							<img src="img/box5.jpg" alt="image">
+						</div>
+					</div>				
+				</div>
+					<button type="<button type="button">see more</button>">
+			</div>
+		</section>
+		<section class="second">
+			<div class="wrapper">
+				<img src="img/line2.png" alt="line" class="line">
+				<h3>latest news</h3>
+				<div class="slider-container">
+
+					<div class="slide-item">
+						<img src="img/slide1.jpg" class="up" alt="image">
+						<div class="item-body">
+						<h4>See The Unmatched Beauty Of The Great. Lakes.</h4>
+						<p>Free directories: directories are perfect for customers that are... searching for</p>
+						<div class="item-down">
+							<img src="img/slide1.1.png">
+						</div>
+						</div>
+					</div>
+
+						<div class="slide-item">
+						<img src="img/slide2.jpg" class="up" alt="image">
+						<div class="item-body">
+						<h4>See The Unmatched Beauty Of The Great. Lakes.</h4>
+						<p>Free directories: directories are perfect for customers that are... searching for</p>
+						<div class="item-down">
+							<img src="img/slide2.png">
+						</div>
+						</div>
+					</div>
+					
+					<div class="slide-item">
+						<img src="img/slide3.jpg" class="up" alt="image">
+						<div class="item-body">
+						<h4>See The Unmatched Beauty Of The Great. Lakes.</h4>
+						<p>Free directories: directories are perfect for customers that are... searching for</p>
+						<div class="item-down">
+							<img src="img/slide3.png">
+						</div>
+						</div>
+					</div>
+
+					<div class="slide-item">
+						<img src="img/slide1.jpg" class="up" alt="image">
+						<div class="item-body">
+						<h4>See The Unmatched Beauty Of The Great. Lakes.</h4>
+						<p>Free directories: directories are perfect for customers that are... searching for</p>
+						<div class="item-down">
+							<img src="img/slide1.1.png">
+						</div>
+						</div>
+					</div>
+
+					<div class="slide-item">
+						<img src="img/slide2.jpg" class="up" alt="image">
+						<div class="item-body">
+						<h4>See The Unmatched Beauty Of The Great. Lakes.</h4>
+						<p>Free directories: directories are perfect for customers that are... searching for</p>
+						<div class="item-down">
+							<img src="img/slide2.png">
+						</div>
+						</div>
+					</div>
+
+
+					
+				</div>
+			</div>
+		</section>
+
+		<section class="third">
+			<div id="map"></div>
+
+			<script>
+				function initMap() {
+        var uluru = {lat: 40.6765726, lng: -73.905428};
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+            zoom: 12,
+            center: uluru,
+            disableDefaultUI: true});
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: 30,
+          strokeWeight: 40,
+          strokeColor: 'white',
+          strokeOpacity: 0.9,
+          fillColor: 'blue',
+          fillOpacity: 1,
+          cursor: 'pointer',          
+        },
+
+
+         });
+
+
+      }
+				
+			</script>
+			<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQFbabPtXCekCdraAcjBwsYJyFkq5-9s8&callback=initMap">
+    </script>
+		</section>
+
+		
+	
+		</div>
+	</body>
+</html>
+
+
